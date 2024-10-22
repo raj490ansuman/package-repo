@@ -1,9 +1,9 @@
 import React from 'react';
-interface ModalProps {
+interface MyModalProps {
     isOpen: boolean;
     onClose: () => void;
     title: string;
     children: React.ReactNode;
 }
-declare const Modal: React.FC<ModalProps>;
-export default Modal;
+declare const MyModal: React.FC<MyModalProps>;
+export default MyModal;

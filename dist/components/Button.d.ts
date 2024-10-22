@@ -1,7 +1,8 @@
 import React from 'react';
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary' | 'secondary' | 'danger';
-    size?: 'small' | 'medium' | 'large';
+import 'antd/dist/antd.css';
+interface MyButtonProps {
+    label: string;
+    onClick: () => void;
 }
-declare const Button: React.FC<ButtonProps>;
-export default Button;
+declare const MyButton: React.FC<MyButtonProps>;
+export default MyButton;

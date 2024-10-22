@@ -1,8 +1,7 @@
 import React from 'react';
-interface CardProps {
+interface MyCardProps {
     title: string;
     content: string;
-    footer?: React.ReactNode;
 }
-declare const Card: React.FC<CardProps>;
-export default Card;
+declare const MyCard: React.FC<MyCardProps>;
+export default MyCard;

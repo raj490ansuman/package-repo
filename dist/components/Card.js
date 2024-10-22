@@ -1,10 +1,7 @@
-// src/components/Card.tsx
-import React from 'react';
-var Card = function (_a) {
-    var title = _a.title, content = _a.content, footer = _a.footer;
-    return (React.createElement("div", { className: "border rounded-lg p-4 shadow-md bg-white" },
-        React.createElement("h3", { className: "text-lg font-bold" }, title),
-        React.createElement("p", { className: "mt-2 text-gray-700" }, content),
-        footer && React.createElement("div", { className: "mt-4" }, footer)));
+import { jsx as _jsx } from "react/jsx-runtime";
+import { Card } from 'antd';
+var MyCard = function (_a) {
+    var title = _a.title, content = _a.content;
+    return (_jsx(Card, { title: title, style: { width: 300 }, children: _jsx("p", { children: content }) }));
 };
-export default Card;
+export default MyCard;
